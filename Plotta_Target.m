@@ -1,0 +1,23 @@
+%Plotta il grafico della Tensione di un dato Neurone (identificato da 
+%layer, row, column) in una determinata simulazione.
+%#t	layer	Row	Column	V	U	NSpikes	I	IOut	SimNumber	IDFather	IDTarget
+simulazione = 2;
+
+% matrice = importdata(['../Dati/Target', num2str(simulazione), '.txt']);
+matrice = importdata(['../Dati/target2-2.txt']);
+
+t = [];
+v = [];
+for k = 1:size(matrice, 1)
+        t(k) = k-1;
+        v(k) = matrice(k , 1);
+end
+figure()
+plot(t, v);
+xlabel('Steps');
+ylabel('Tensione');
+title('Neurone 2');
+
+
+
+
