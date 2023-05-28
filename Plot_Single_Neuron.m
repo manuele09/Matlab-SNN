@@ -6,9 +6,10 @@ if ~exist('norm','var')
 %Plotta il grafico della Tensione di un dato Neurone (identificato da 
 %layer, row, column) in una determinata simulazione.
 %#t	layer	Row	Column	V	U	NSpikes	I	IOut	SimNumber	IDFather	IDTarget
-data = importdata(['../Dati/Neurons', num2str(simulazione), '-0.txt']);
+data = importdata(['../Dati/Neurons', num2str(simulazione), '.txt']);
 matrice = data.data; %Questa matrice ha size(matrice, 1) righe, e 12 colonne.
 clear data;
+
 t = [];
 v = [];
 curr = [];
@@ -32,8 +33,12 @@ if (niente == 1)
 else
     %figure();
     if (norm == 0)
-        plot(t, v);
+        
+        plot(t, v, "LineWidth", 1);
         titolo = sprintf("Riga %d, Colonna %d", row, column);
+        ax = gca;
+ax.FontSize = 35; 
+yticks([-60, -20, 20])
         %title(titolo);
     else
          plot(t, v/40);

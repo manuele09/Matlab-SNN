@@ -1,13 +1,13 @@
-sim = 0;
-sim_test = 12;
+sim =0;
+sim_test = 10;
 n_classes = 3;
 len1 = 3;
 len2 = 3;
 len_test = 3;
 ring = 0;
-rings = 3;
+rings = 4;
 
-first_input = 1;
+first_input = 0;
 second_input = 0;
 first_context = 0;
 second_context = 0;
@@ -73,12 +73,29 @@ evo = 0;
 % end
 
 
-% fig = figure();
-% T = tiledlayout(1, 1);
-% t=tiledlayout(T, 8, 8);
-% t.Layout.Tile = 1;
-% Plot_All_Liquid(sim+1, t);
-% saveas(fig, "../Figures/Liquid.fig");
+fig = figure('units','normalized','outerposition',[0 0 1 1]);
+t = tiledlayout(3, 3);
+Plot_All_Liquid(0, t);
+saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/0.fig");
+saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/0.png");
+
+fig = figure('units','normalized','outerposition',[0 0 1 1]);
+t=tiledlayout(3, 3);
+Plot_All_Liquid(1, t);
+saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/1.fig");
+saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/1.png");
+
+fig = figure('units','normalized','outerposition',[0 0 1 1]);
+t=tiledlayout(3, 3);
+Plot_All_Liquid(2, t);
+saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/2.fig");
+saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/2.png");
+
+fig = figure('units','normalized','outerposition',[0 0 1 1]);
+t=tiledlayout(3, 3);
+Plot_All_Liquid(3, t);
+saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/3.fig");
+saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/3.png");
 
 
 
@@ -99,20 +116,20 @@ for i=0:(len1 -1)
 end
 
 %MORRIS LECAR 1
-for i=0:(len1 -1)
-    t=tiledlayout(T, n_classes, 1);
-    t.Layout.Tile = contatore;
-    Plot_All_Morris_Lecar(sim + i, t, n_classes);
-    contatore = contatore + 1;
-end
-
-
-for i=0:(len1 -1)
-    t=tiledlayout(T, n_classes, 1);
-    t.Layout.Tile = contatore;
-    Plot_All_Sum(sim + i, t, n_classes);
-    contatore = contatore + 1;
-end
+% for i=0:(len1 -1)
+%     t=tiledlayout(T, n_classes, 1);
+%     t.Layout.Tile = contatore;
+%     Plot_All_Morris_Lecar(sim + i, t, n_classes);
+%     contatore = contatore + 1;
+% end
+% 
+% 
+% for i=0:(len1 -1)
+%     t=tiledlayout(T, n_classes, 1);
+%     t.Layout.Tile = contatore;
+%     Plot_All_Sum(sim + i, t, n_classes);
+%     contatore = contatore + 1;
+% end
 saveas(fig, "../Figures/Input 1.fig");
 
 end
