@@ -1,4 +1,7 @@
 function Plot_Single_Neuron (simulazione, layer, row, column, norm) 
+
+loadedConfig = load('config.mat');
+config = loadedConfig.configs;
 if ~exist('norm','var')
      % third parameter does not exist, so default it to something
       norm = 0;
@@ -37,7 +40,7 @@ else
         plot(t, v, "LineWidth", 1);
         titolo = sprintf("Riga %d, Colonna %d", row, column);
         ax = gca;
-ax.FontSize = 35; 
+%ax.FontSize = config.axis_font_size; 
 yticks([-60, -20, 20])
         %title(titolo);
     else

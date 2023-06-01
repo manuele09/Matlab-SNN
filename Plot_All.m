@@ -73,29 +73,29 @@ evo = 0;
 % end
 
 
-fig = figure('units','normalized','outerposition',[0 0 1 1]);
-t = tiledlayout(3, 3);
-Plot_All_Liquid(0, t);
-saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/0.fig");
-saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/0.png");
-
-fig = figure('units','normalized','outerposition',[0 0 1 1]);
-t=tiledlayout(3, 3);
-Plot_All_Liquid(1, t);
-saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/1.fig");
-saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/1.png");
-
-fig = figure('units','normalized','outerposition',[0 0 1 1]);
-t=tiledlayout(3, 3);
-Plot_All_Liquid(2, t);
-saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/2.fig");
-saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/2.png");
-
-fig = figure('units','normalized','outerposition',[0 0 1 1]);
-t=tiledlayout(3, 3);
-Plot_All_Liquid(3, t);
-saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/3.fig");
-saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/3.png");
+% fig = figure('units','normalized','outerposition',[0 0 1 1]);
+% t = tiledlayout(3, 3);
+% Plot_All_Liquid(0, t);
+% saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/0.fig");
+% saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/0.png");
+% 
+% fig = figure('units','normalized','outerposition',[0 0 1 1]);
+% t=tiledlayout(3, 3);
+% Plot_All_Liquid(1, t);
+% saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/1.fig");
+% saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/1.png");
+% 
+% fig = figure('units','normalized','outerposition',[0 0 1 1]);
+% t=tiledlayout(3, 3);
+% Plot_All_Liquid(2, t);
+% saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/2.fig");
+% saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/2.png");
+% 
+% fig = figure('units','normalized','outerposition',[0 0 1 1]);
+% t=tiledlayout(3, 3);
+% Plot_All_Liquid(3, t);
+% saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/3.fig");
+% saveas(fig, "../Figures/FiguresArticolo/LiquidLayer/3.png");
 
 
 

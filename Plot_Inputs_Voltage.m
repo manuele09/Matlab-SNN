@@ -1,10 +1,7 @@
 function Plot_Inputs_Voltage(sim, t)
 
 
-
-
-
-for i=0:2
+for i=0:1
     for j=0:3
         t.Layout.TileSpan = [1 1];
         nexttile(t);
