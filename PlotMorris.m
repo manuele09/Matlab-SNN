@@ -1,6 +1,6 @@
 fig = figure();
-len2 = 4;
-sim = 8;
+len2 = 3;
+sim = 12;
 T = tiledlayout(2, len2);
 contatore = 1;
 n_classes = 4;

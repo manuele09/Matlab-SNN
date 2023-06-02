@@ -37,11 +37,11 @@ else
     %figure();
     if (norm == 0)
         
-        plot(t, v, "LineWidth", 1);
-        titolo = sprintf("Riga %d, Colonna %d", row, column);
+        plot(t, v, "LineWidth", config.line_width);
+        yticks([-130, -50, 0]);
+        ylim([-130, 50]);
         ax = gca;
-%ax.FontSize = config.axis_font_size; 
-yticks([-60, -20, 20])
+        ax.FontSize = config.axis_font_size; 
         %title(titolo);
     else
          plot(t, v/40);
