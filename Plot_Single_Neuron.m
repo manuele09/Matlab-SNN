@@ -1,5 +1,4 @@
 function Plot_Single_Neuron (simulazione, layer, row, column, norm) 
-
 loadedConfig = load('config.mat');
 config = loadedConfig.configs;
 if ~exist('norm','var')

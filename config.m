@@ -1,13 +1,13 @@
-configs.title_font_size = 40; %title dimension
-configs.axis_font_size = 35; %x e y label dimension
-configs.tick_font_size = 25; %axis numbers and legend dimension
-configs.line_width = 1.2; %line width
-
-
-% configs.title_font_size = 6; %title dimension
-% configs.axis_font_size = 6; %x e y label dimension
-% configs.tick_font_size = 15; %axis numbers and legend dimension
+% configs.title_font_size = 40; %title dimension
+% configs.axis_font_size = 35; %x e y label dimension
+% configs.tick_font_size = 25; %axis numbers and legend dimension
 % configs.line_width = 1.2; %line width
+
+
+configs.title_font_size = 15; %title dimension
+configs.axis_font_size = 15; %x e y label dimension
+configs.tick_font_size = 15; %axis numbers and legend dimension
+configs.line_width = 1; %line width
 
 configs.liquid_layer = 14;
 
